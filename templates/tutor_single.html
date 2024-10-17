@@ -1,0 +1,14 @@
+{% extends "base.html" %}\
+
+{% block content%}
+<h2>Hello I am {{ tut.username }}!</h2>
+<p>Classes available for tutoring: {{ tut.Ta_Classes }}</p>
+<h3>Availability:</h3>
+
+{{ tut.Days }} at {{ tut.Hours }}
+
+
+
+<p><h3>Heres a little bit about me</h3></p>
+<p>{{ tut.Bio }}</p>
+{% endblock content %}

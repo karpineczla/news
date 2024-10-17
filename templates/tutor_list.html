@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+<title>{% block title %}<header>Available tutors</header>{% endblock title %}</title>
+{% block content %}
+<body>
+<ul>
+    {% for tut in tuts %}
+    <li><a href="{% url 'tutor_single' tut.pk %}">{{ tut.username }}</a>
+    <p>I am available at {{ tut.Hours }} on {{ tut.Days }}</p>
+    
+    </li>
+    {% endfor %}
+</ul> 
+  
+</body>
+{% endblock content %}

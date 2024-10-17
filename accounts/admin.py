@@ -14,6 +14,9 @@ class CustomUserAdmin(UserAdmin):
         "username",
         "age",
         "is_staff",
+        "Ta_Classes",
+        "Days",
+        "Hours",
     ]
     fieldsets = UserAdmin.fieldsets + ((None, {"fields": ("age",)}),)
     add_fieldsets =  UserAdmin.add_fieldsets + ((None, {"fields": ("age",)}),)

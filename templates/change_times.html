@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        {{ hours_form.as_p }}
+        {{ days_form.as_p }}
+    </div>
+        <button type="submit" class="btn btn-success">Change Hours and Days</button>
+    </form>
+    {% endblock content %}
