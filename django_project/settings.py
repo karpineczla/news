@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     
     "accounts",
     "pages",
+    "articles",
     
 ]
 
@@ -134,3 +135,4 @@ LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 CRISPY_ALLOWED_TEMPLATE_PACK = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+TIME_ZONE ="America/New_York"
